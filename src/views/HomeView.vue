@@ -222,7 +222,6 @@ export default {
         params: {
           audios: this.audio,
           streams: this.screenallow,
-          // streams: [this.stream],
           videos: this.video
         }
       })
