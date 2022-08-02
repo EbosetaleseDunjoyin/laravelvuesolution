@@ -1,0 +1,427 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.br {
+    border-right: 1px solid #707070;
+}
+
+.primary-alt {
+    background-color: transparent;
+    border: 1px solid #E2E5ED;
+    border-radius: 28px;
+    font: normal normal normal 14px/21px Poppins;
+    letter-spacing: 0px;
+    color: #637C8E;
+    padding: 11px 22px;
+}
+
+.primary-btn {
+    background: #0DABD8 0% 0% no-repeat padding-box;
+    border-radius: 28px;
+    border: 1px solid #0DABD8;
+    font: normal normal normal 14px/21px Poppins;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    padding: 11px 22px;
+}
+
+.secondary-btn {
+    background: #EF5350 0% 0% no-repeat padding-box;
+    border-radius: 28px;
+    border: 1px solid #EF5350;
+    font: normal normal normal 14px/21px Poppins;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    padding: 11px 22px;
+
+}
+
+/* Header */
+#header {
+    border-bottom: 2px solid #E2E5ED;
+    height: 70px;
+    padding: 0 5%;
+    color: #707070;
+    z-index: 10000;
+    background-color: #ffffff;
+}
+
+#header nav {
+
+    z-index: 100;
+
+}
+
+#header .navbar-brand {
+    color: #21455E;
+    font-family: 'Helvetica', 'san-serif';
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#header .logo-square {
+    background: #FBBD71 0% 0% no-repeat padding-box;
+    border-radius: 10px;
+    opacity: 1;
+    top: 22px;
+    padding-top: 20%;
+    left: 51px;
+    width: 40px;
+    height: 40px;
+
+}
+
+#header .logo-inside {
+    background-color: #ffffff;
+    margin: auto;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+}
+
+
+nav .nav-item .nav-link {
+    font-size: 18px;
+    color: #707070;
+
+}
+
+#header nav .navbar-toggler {
+    border: 0;
+}
+
+#header nav .first .nav-item {
+    padding: 10px 20px;
+    margin-top: -8px;
+    border-top: 4px solid transparent;
+}
+
+#header nav .first .nav-item:hover,
+#header nav .first .nav-item.active {
+    border-top: 4px solid #0DABD8;
+    font-weight: 500;
+    padding: -5px 0px;
+
+
+
+}
+
+#header nav .first .nav-item:hover .nav-link,
+#header nav .first .nav-item.active .nav-link,
+#header nav .nav-item .nav-link.active {
+    color: #21455E;
+
+}
+
+#header .nav-item .avatar {
+    border-radius: 20px;
+    display: inline-flex;
+    position: relative;
+    text-align: center;
+    vertical-align: middle
+}
+
+#header .nav-item .avatar.avatar-xl .avatar-content,
+#header .nav-item .avatar.avatar-xl img {
+    font-size: 1.4rem;
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+}
+
+#header nav .second .nav-item {
+    padding: 0 20px;
+    border-top: 4px solid transparent;
+}
+
+#header nav .second .nav-item .name h5 {
+    font-size: 16px;
+    color: #000000;
+}
+
+#header nav .second .nav-item .name h6 {
+    font-size: 12px;
+
+}
+
+#header nav .dropdown-menu .dropdown-item {
+    color: #707070;
+}
+
+#header nav .dropdown .dropdown-toggle::after {
+    color: #ccc;
+    content: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><path style="fill:none;stroke:gray;stroke-width:1" d="m6 9 6 6 6-6"/></svg>');
+    display: block;
+    position: absolute;
+    right: 0px;
+    top: 22px;
+    border: none;
+}
+
+#header nav .dropdown-menu .dropdown-item {
+    color: #707070;
+}
+
+#header nav .dropdown-menu .dropdown-item.activity,
+#header nav .dropdown-menu .dropdown-item:hover {
+    color: #0DABD8 !important;
+    background-color: #ffffff !important;
+}
+
+#header nav .dropdown .dropdown-menu {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 24px #0000001A;
+    border: 1px solid #E2E5ED;
+    border-radius: 8px;
+}
+
+/* #header nav .navbar-collapse {
+     !important;
+} */
+
+/* MAIN SIDEBAR */
+
+#main {
+    padding: 0;
+    margin: 0;
+
+}
+
+#main .main-content {
+
+    padding-left: 10%;
+}
+
+#main #sidebar {
+    background: #ebf2f68f;
+    /* bottom: 0; */
+    height: 100vh;
+    overflow-y: auto;
+    position: fixed;
+    padding: 0 2%;
+    top: 0px;
+    left: 0;
+    transition: left .5s ease-out;
+    width: 350px;
+    z-index: -10;
+    border-right: 2px solid #21455e8e;
+}
+
+#main #sidebar .menu {
+    margin-top: 150px;
+}
+
+#main #sidebar .menu .sidebar-link {
+    align-items: center;
+    border-radius: 10px;
+    color: #21455E;
+    display: block;
+    display: flex;
+    font: normal normal 300 16px/25px Poppins;
+    padding: .7rem 1rem;
+    text-decoration: none;
+    transition: all .5s;
+    border: 1px solid #EBF2F6;
+
+}
+
+#main #sidebar .menu .sidebar-item {
+    list-style: none;
+    margin-top: .5rem;
+
+    position: relative
+}
+
+#main #sidebar .menu .sidebar-item.active>.sidebar-link {
+    background-color: #E2E5ED;
+    border: 1px solid #0DABD838;
+}
+
+/* MAIN CONTENT */
+
+#main .bread_crumbs .breadcrumb-item a,
+#main .bread_crumbs .breadcrumb-item {
+
+    font: normal normal normal 14px/26px Poppins;
+    letter-spacing: 0px;
+    color: #637C8E;
+    text-decoration: none;
+
+}
+
+#main .bread_crumbs_title {
+    font: normal normal 300 24px/35px Poppins;
+    letter-spacing: 0px;
+    color: #000000;
+}
+
+#main .bread_crumbs_title_number {
+    font: normal normal 600 24px/35px Poppins;
+    letter-spacing: 0px;
+    color: #637C8E;
+}
+
+#main .table {
+    font: normal normal normal 16px/26px Poppins;
+    color: #21455E;
+}
+
+#main .table th {
+    font: normal normal medium 18px/27px Poppins;
+    color: #21455E;
+}
+
+#main .table td i {
+    font-size: 28px;
+    padding-right: 50px;
+}
+
+#main .table td .table-img {
+    position: relative;
+    display: block;
+
+
+}
+
+#main .table .table-img img {
+    width: 120px;
+    height: 70px;
+    border-radius: 6px;
+}
+
+#main .table .table-img .table-no {
+    width: 41px;
+    height: 18px;
+    background: #000000 0% 0% no-repeat padding-box;
+    border-radius: 3px;
+    color: #ffffff;
+    display: flex;
+    padding-top: 0px;
+    margin-top: 0;
+    justify-content: center;
+    font-size: 12px;
+    position: absolute;
+    bottom: 3%;
+    left: 28%;
+}
+
+#main .table .table-img .table-no p {
+    margin: -4px;
+
+}
+
+#main .table .table-title {
+    width: 250px;
+}
+
+#main .table .table-title h6 {
+    font: normal normal normal 14px/21px Poppins;
+
+    color: #21455E;
+}
+
+#main .table .table-title p {
+    font: normal normal normal 12px/18px Poppins;
+    color: #A3BAC6;
+}
+
+/* MODAL Record */
+
+#recordModal .modal-content {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 8px;
+    margin-top: 40%;
+    padding: 5px 42px 36px 38px;
+}
+
+#recordModal .modal-content .modal-header,
+#recordModal .modal-content .modal-header button.btn-close {
+    color: #000000 !important;
+    opacity: 1;
+}
+
+#recordModal .modal-content .modal-header h5 {
+    font: normal normal 500 22px/33px Poppins;
+}
+
+#recordModal .modal-content .modal-body form p {
+    font: normal normal 400 14px/25px Poppins;
+    letter-spacing: 0px;
+    color: #000000;
+}
+
+#recordModal .modal-content .modal-body form select {
+    background-color: #F8FAFB;
+    border: 1px solid #E2E5ED;
+    border-radius: 8px;
+    padding: 13px 28px;
+    font: normal normal normal 14px/25px Poppins;
+
+
+}
+
+#recordModal .modal-content .modal-body form .check-boxe h6 {
+    font: normal normal 500 18px/27px Poppins;
+    letter-spacing: 0px;
+    color: #21455E;
+    margin-right: 20px;
+
+
+}
+
+
+
+
+
+#recordModal .modal-content .modal-body form .check-boxe .form-check-input {
+
+    background-color: #a3bac6;
+    color: #ffffff;
+    border: 1px solid #a3bac6;
+    height: 19px;
+    width: 37px;
+
+
+}
+
+#recordModal .modal-content .modal-body form .check-boxe .form-check-input:checked {
+
+    background-color: #0ad688;
+    border: 1px solid #0ad688;
+}
+
+/* RECORD SCREEN */
+
+#main .record-screen {
+    padding: 81px;
+    background: transparent linear-gradient(117deg, #0DABD8 0%, #EAFAFF 0%, #D3F5FE 100%) 0% 0% no-repeat padding-box;
+    height: 100vh;
+    min-height: 100%;
+
+}
+
+
+#main .record-screen .square {
+    width: 965px;
+    height: 518px;
+    background: #21455E;
+    border-radius: 8px;
+}
+
+#main .record-screen .top-record-text p {
+    margin-left: 25%;
+    font: normal normal 400 14px/26px Poppins;
+    color: #637C8E;
+
+}
+
+#main .record-screen .top-record-text p i {
+    font-size: 20px;
+    color: #EE5951;
+
+}
